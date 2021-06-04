@@ -1,0 +1,25 @@
+{
+  "name": "fbbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/master.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPBBots/famousbirthdays.git"
+  },
+  "author": "JPBBerry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPBBots/famousbirthdays/issues"
+  },
+  "homepage": "https://github.com/JPBBots/famousbirthdays#readme",
+  "dependencies": {
+    "discord-rose": "^1.4.0",
+    "famousbirthdays": "^1.0.2",
+    "interface": "github:jpbbots/interface",
+    "topgg-autoposter": "^2.0.0"
+  }
+}
