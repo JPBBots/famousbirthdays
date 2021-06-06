@@ -8,6 +8,8 @@ const int = new Interface()
 const worker = new Worker()
 int.setupWorker(worker)
 
+worker.setStatus('watching', 'Famous Birthdays')
+
 worker.commands
   .prefix(() => {
     return '<@' + worker.user.id + '>'
