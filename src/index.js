@@ -1,12 +1,23 @@
-const { Worker } = require('discord-rose')
-const { Interface } = require('interface')
+const { SingleWorker } = require('discord-rose')
+const { Interface } = require('@jpbbots/interface')
 
 const famousBirthdays = require('famousbirthdays')
+const config = require('../config')
 
 const int = new Interface()
 
-const worker = new Worker()
-int.setupWorker(worker)
+const worker = new SingleWorker({
+  token: config.token,
+  cache: {
+    channels: false,
+    roles: false,
+    self: false
+  },
+  cacheControl: {
+    guilds: ['id']
+  }
+})
+int.setupSingleton(worker, 'famousbirthdays')
 
 worker.setStatus('watching', 'Famous Birthdays')
 
