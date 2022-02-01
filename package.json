@@ -2,7 +2,7 @@
   "name": "fbbot",
   "version": "1.0.0",
   "description": "",
-  "main": "./src",
+  "main": "./dist/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,10 +17,17 @@
   },
   "homepage": "https://github.com/JPBBots/famousbirthdays#readme",
   "dependencies": {
-    "@jpbbots/interface": "^1.0.6",
-    "discord-rose": "^1.5.0",
+    "@jadl/cmd": "^0.2.3",
+    "@jadl/embed": "^0.0.3",
+    "@jpbbots/interface": "^2.2.1",
     "famousbirthdays": "^1.0.2",
     "interface": "github:jpbbots/interface",
+    "jadl": "^0.1.6",
+    "node-html-parser": "^5.2.0",
     "topgg-autoposter": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.13",
+    "discord-api-types": "^0.26.1"
   }
 }
