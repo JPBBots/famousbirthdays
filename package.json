@@ -5,7 +5,7 @@
   "main": "./dist/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "npm i && tsc",
+    "prestart": "tsc",
     "start": "node ."
   },
   "repository": {
@@ -21,7 +21,7 @@
   "dependencies": {
     "@jadl/cmd": "^0.2.3",
     "@jadl/embed": "^0.0.3",
-    "@jpbbots/interface": "^2.2.1",
+    "@jpbbots/interface": "^2.2.2",
     "famousbirthdays": "^1.0.2",
     "jadl": "^0.1.6",
     "node-html-parser": "^5.2.0",
