@@ -2,20 +2,18 @@ import { SingleWorker } from 'jadl'
 import { CommandHandler } from '@jadl/cmd'
 import { Interface } from '@jpbbots/interface'
 
-import { GatewayIntentBits } from 'discord-api-types'
+import { GatewayIntentBits } from 'discord-api-types/v10'
 
 import { FamousBirthdaysCommand } from './commands/FamousBirthdays'
 
 export class FamousBirthdays extends SingleWorker {
   int = new Interface()
 
-  cmd = new CommandHandler(this, [
-    FamousBirthdaysCommand
-  ], {
+  cmd = new CommandHandler(this, [FamousBirthdaysCommand], {
     interactionGuild: this.int.production ? undefined : '569907007465848842'
   })
 
-  constructor () {
+  constructor() {
     super({
       token: process.env.BOT_TOKEN!,
       cache: {
